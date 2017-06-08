@@ -8,13 +8,15 @@
       {{#cs-field content "propertyType" as |propertyType|}}<strong>Type:</strong> {{rental-property-type propertyType}} - {{propertyType}}{{/cs-field}}
     </div>
     <div class="detail">
-      <strong>Location:</strong> {{content.city}}
+      <strong>Location:</strong> {{cs-field content "city"}}
     </div>
     <div class="detail">
       <strong>Number of bedrooms:</strong> {{cs-field content "bedrooms"}}
     </div>
     <p>&nbsp;</p>
-    <p class="description">{{content.description}}</p>
+    <p class="description">{{cs-field content "description"}}</p>
   </div>
-  <img src="{{content.image}}" class="rental-pic">
+  {{#cs-field content "image" as |url|}}
+    <img src="{{url}}" class="rental-pic">
+  {{/cs-field}}
 </div>
