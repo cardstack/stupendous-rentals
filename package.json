@@ -40,10 +40,10 @@
   },
   "private": true,
   "dependencies": {
-    "@cardstack/git": "^0.1.0",
-    "@cardstack/hub": "^0.1.0",
-    "@cardstack/jsonapi": "^0.1.0",
-    "@cardstack/models": "^0.1.0",
-    "@cardstack/tools": "^0.1.0"
+    "@cardstack/git": "^0.1.1",
+    "@cardstack/hub": "^0.1.1",
+    "@cardstack/jsonapi": "^0.1.1",
+    "@cardstack/models": "^0.1.1",
+    "@cardstack/tools": "^0.1.1"
   }
 }
