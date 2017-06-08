@@ -3,29 +3,31 @@
  * Base Elements
  */
 
-* {
+.container * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-div,
-span,
-a {
+.container h1,
+.container h2,
+.container h3,
+.container h4,
+.container h5,
+.container h6,
+.container p,
+.container div,
+.container span,
+.container a {
     font-family: 'Lato', 'Open Sans', 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif;
     line-height: 1.5;
 }
 
 body {
     background: #f3f3f3;
+    margin: 0;
+    padding: 0;
 }
 
 a {
