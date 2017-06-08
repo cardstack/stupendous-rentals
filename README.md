@@ -1,24 +1,25 @@
-# Super Rentals
+# Stupendous Rentals
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+## What is this thing?
 
-This is the working repository for the Super Rentals tutorial,
-which you can check out at https://guides.emberjs.com/current/tutorial/ember-cli/.
+The EmberJS guides have [a tutorial](https://guides.emberjs.com/current/tutorial/ember-cli/) that is structured around a demo app called [Super Rentals](https://github.com/ember-learn/super-rentals).
+
+Stupdendous Rentals (this repo) is a fork of Super Rentals that goes further. It integrates [Cardstack](https://github.com/cardstack/cardstack) to demonstrate a complete frontend and backend working in tandem.
 
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
 
 * [Git](https://git-scm.com/)
-* [Node.js](https://nodejs.org/) (with NPM)
-* [Ember CLI](https://ember-cli.com/)
-* [PhantomJS](http://phantomjs.org/)
+* [Node.js](https://nodejs.org/) (version 7.0 or newer)
+* [Yarn](https://yarnpkg.com/)
+* [Elasticsearch](https://www.elastic.co/downloads/elasticsearch) (version 5.0 or newer)
 
 ## Installation
 
 * `git clone <repository-url>` this repository
 * `cd super-rentals`
-* `npm install`
+* `yarn install`
 
 ## Running / Development
 
