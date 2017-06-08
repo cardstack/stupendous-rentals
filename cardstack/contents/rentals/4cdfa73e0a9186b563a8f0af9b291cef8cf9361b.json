@@ -1,0 +1,11 @@
+{
+  "attributes": {
+    "title": "Urban Living",
+    "owner": "Mike Teavee",
+    "city": "Seattle",
+    "property-type": "Condo",
+    "bedrooms": 1,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Alfonso_13_Highrise_Tegucigalpa.jpg",
+    "description": "A commuters dream. This rental is within walking distance of 2 bus stops and the Metro."
+  }
+}
