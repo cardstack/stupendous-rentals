@@ -44,6 +44,7 @@
     "@cardstack/hub": "^0.1.1",
     "@cardstack/jsonapi": "^0.1.1",
     "@cardstack/models": "^0.1.1",
+    "@cardstack/routing": "^0.1.1",
     "@cardstack/tools": "^0.1.1"
   },
   "ember-addon": {
