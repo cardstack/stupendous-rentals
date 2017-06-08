@@ -1,0 +1,16 @@
+{
+  "name": "image-url",
+  "keywords": [
+    "ember-addon",
+    "cardstack-plugin"
+  ],
+  "cardstack-plugin": {
+    "api-version": 1,
+    "src": "cardstack"
+  },
+  "dependencies": {
+    "ember-cli-babel": "^6.1.0",
+    "ember-cli-htmlbars": "^1.1.1",
+    "@cardstack/core-types": "^0.1.0"
+  }
+}

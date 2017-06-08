@@ -45,5 +45,17 @@
     "@cardstack/jsonapi": "^0.1.1",
     "@cardstack/models": "^0.1.1",
     "@cardstack/tools": "^0.1.1"
+  },
+  "ember-addon": {
+    "paths": [
+      "lib/image-url"
+    ]
+  },
+  "keywords": ["cardstack-plugin"],
+  "cardstack-plugin": {
+    "api-version": 1,
+    "in-repo-plugins": [
+      "lib/image-url"
+    ]
   }
 }
