@@ -1,0 +1,40 @@
+{
+  "attributes": {
+    "is-built-in": null
+  },
+  "relationships": {
+    "fields": {
+      "data": [
+        {
+          "type": "fields",
+          "id": "title"
+        },
+        {
+          "type": "fields",
+          "id": "owner"
+        },
+        {
+          "type": "fields",
+          "id": "city"
+        },
+        {
+          "type": "fields",
+          "id": "property-type"
+        },
+        {
+          "type": "fields",
+          "id": "bedrooms"
+        },
+        {
+          "type": "fields",
+          "id": "image"
+        },
+        {
+          "type": "fields",
+          "id": "description"
+        }
+      ]
+    },
+    "data-source": null
+  }
+}
