@@ -43,6 +43,7 @@
     "@cardstack/git": "^0.1.0",
     "@cardstack/hub": "^0.1.0",
     "@cardstack/jsonapi": "^0.1.0",
-    "@cardstack/models": "^0.1.0"
+    "@cardstack/models": "^0.1.0",
+    "@cardstack/tools": "^0.1.0"
   }
 }
