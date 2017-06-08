@@ -2,13 +2,16 @@
 # yarn lockfile v1
 
 
-"@cardstack/core-types@^0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@cardstack/core-types/-/core-types-0.1.1.tgz#0b27ec0c6cbb70248846a1b70cf61c26df29a6f8"
+"@cardstack/core-types@^0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@cardstack/core-types/-/core-types-0.1.2.tgz#24e077f68a355076369d4ea533f3af2ad8bc05a9"
   dependencies:
     ember-cli-babel "^5.2.4"
     ember-cli-htmlbars "^1.1.1"
+    ember-cli-postcss "https://github.com/ef4/ember-cli-postcss#fdb9d27e47adb70376cc00451523ca353595ce36"
     moment-timezone "^0.5.11"
+    postcss-cssnext "^2.10.0"
+    postcss-import "^9.1.0"
 
 "@cardstack/di@^0.1.1":
   version "0.1.1"
@@ -17,17 +20,17 @@
     "@glimmer/di" "^0.2.0"
     resolve "^1.3.3"
 
-"@cardstack/elasticsearch@^0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@cardstack/elasticsearch/-/elasticsearch-0.1.1.tgz#f477eb6ddaba8842fbf56f72dc66f18c3c86bac6"
+"@cardstack/elasticsearch@^0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@cardstack/elasticsearch/-/elasticsearch-0.1.2.tgz#23e94247c1c8a9041eaa3f92138bf8119b6e0143"
   dependencies:
     "@cardstack/di" "^0.1.1"
     "@cardstack/plugin-utils" "^0.1.1"
     elasticsearch "^12.1.3"
 
-"@cardstack/git@^0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@cardstack/git/-/git-0.1.1.tgz#3f8db1a437de239e312d28cf3cd273f5782affeb"
+"@cardstack/git@^0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@cardstack/git/-/git-0.1.2.tgz#941f473f5b4cdbc6cbd6c14e16663075c771db8e"
   dependencies:
     "@cardstack/nodegit" "0.19.0-cardstack.0"
     "@cardstack/plugin-utils" "^0.1.1"
@@ -39,13 +42,13 @@
   dependencies:
     handlebars "^4.0.6"
 
-"@cardstack/hub@^0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@cardstack/hub/-/hub-0.1.1.tgz#96bbbb79d5f4a4d5ad4aa369dae27d572b934b3d"
+"@cardstack/hub@^0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@cardstack/hub/-/hub-0.1.2.tgz#b9fcda8121ff7db9769186b3af51f0ab99ed831f"
   dependencies:
-    "@cardstack/core-types" "^0.1.1"
+    "@cardstack/core-types" "^0.1.2"
     "@cardstack/di" "^0.1.1"
-    "@cardstack/elasticsearch" "^0.1.1"
+    "@cardstack/elasticsearch" "^0.1.2"
     "@cardstack/handlebars" "^0.1.1"
     "@cardstack/plugin-utils" "^0.1.1"
     broccoli-funnel "^1.2.0"
@@ -62,9 +65,9 @@
     quick-temp "^0.1.8"
     resolve "^1.3.3"
 
-"@cardstack/jsonapi@^0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@cardstack/jsonapi/-/jsonapi-0.1.1.tgz#972e4e33d69625365fc8d7df7da4d3b5e2b65cfe"
+"@cardstack/jsonapi@^0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@cardstack/jsonapi/-/jsonapi-0.1.2.tgz#5698e490d790402809224f55043772c593fa9373"
   dependencies:
     "@cardstack/di" "^0.1.1"
     "@cardstack/plugin-utils" "^0.1.1"
@@ -72,12 +75,12 @@
     lodash "^4.17.4"
     qs "^6.4.0"
 
-"@cardstack/models@^0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@cardstack/models/-/models-0.1.1.tgz#54ce8ef3ec786963d5f81fa7f15c32847d531c60"
+"@cardstack/models@^0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@cardstack/models/-/models-0.1.2.tgz#a8a7ed6eb45a473595687a54c4127ec9531b2b2d"
   dependencies:
     "@cardstack/di" "^0.1.1"
-    "@cardstack/tools" "^0.1.1"
+    "@cardstack/tools" "^0.1.2"
     denodeify "^1.2.1"
     ember-cli-babel "^6.0.0"
     handlebars "^4.0.6"
@@ -100,11 +103,22 @@
   dependencies:
     debug "^2.6.3"
 
-"@cardstack/tools@^0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@cardstack/tools/-/tools-0.1.1.tgz#a22d613b3d296f8f818dc790899099bb7aec48a3"
+"@cardstack/routing@^0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@cardstack/routing/-/routing-0.1.2.tgz#2642230d1484ce5f0dbd0157675e2d2133859a2f"
   dependencies:
+    "@cardstack/tools" "^0.1.2"
     ember-cli-babel "^5.2.4"
+    ember-cli-htmlbars "^1.1.1"
+    ember-data "^2.12.1"
+    ember-inflector "^1.11.0"
+    ember-resource-metadata "^0.0.7"
+
+"@cardstack/tools@^0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@cardstack/tools/-/tools-0.1.2.tgz#372a0983c6cc33870ba18771c03006ba48c4a06c"
+  dependencies:
+    ember-cli-babel "^6.0.0"
     ember-cli-htmlbars "^1.1.1"
     ember-cli-if-component "https://github.com/ef4/ember-cli-is-component#544bf7a87689015c4f54c6697093d9f2b0d7b1ea"
     ember-cli-moment-shim "^3.0.1"
@@ -2362,9 +2376,9 @@ ember-cli-htmlbars@^1.0.1, ember-cli-htmlbars@^1.1.0, ember-cli-htmlbars@^1.1.1:
     json-stable-stringify "^1.0.0"
     strip-bom "^2.0.0"
 
-"ember-cli-if-component@https://github.com/ef4/ember-cli-is-component#544bf7a87689015c4f54c6697093d9f2b0d7b1ea":
+"ember-cli-if-component@git+https://github.com/ef4/ember-cli-is-component.git#544bf7a87689015c4f54c6697093d9f2b0d7b1ea":
   version "0.4.2"
-  resolved "https://github.com/ef4/ember-cli-is-component#544bf7a87689015c4f54c6697093d9f2b0d7b1ea"
+  resolved "git+https://github.com/ef4/ember-cli-is-component.git#544bf7a87689015c4f54c6697093d9f2b0d7b1ea"
   dependencies:
     ember-cli-babel "^5.1.5"
     ember-cli-htmlbars "^1.0.1"
@@ -2432,9 +2446,9 @@ ember-cli-path-utils@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/ember-cli-path-utils/-/ember-cli-path-utils-1.0.0.tgz#4e39af8b55301cddc5017739b77a804fba2071ed"
 
-"ember-cli-postcss@https://github.com/ef4/ember-cli-postcss#fdb9d27e47adb70376cc00451523ca353595ce36":
+"ember-cli-postcss@git+https://github.com/ef4/ember-cli-postcss.git#fdb9d27e47adb70376cc00451523ca353595ce36":
   version "3.1.2"
-  resolved "https://github.com/ef4/ember-cli-postcss#fdb9d27e47adb70376cc00451523ca353595ce36"
+  resolved "git+https://github.com/ef4/ember-cli-postcss.git#fdb9d27e47adb70376cc00451523ca353595ce36"
   dependencies:
     broccoli-merge-trees "2.0.0"
     broccoli-postcss "3.3.0"

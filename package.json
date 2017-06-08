@@ -40,12 +40,12 @@
   },
   "private": true,
   "dependencies": {
-    "@cardstack/git": "^0.1.1",
-    "@cardstack/hub": "^0.1.1",
-    "@cardstack/jsonapi": "^0.1.1",
-    "@cardstack/models": "^0.1.1",
-    "@cardstack/routing": "^0.1.1",
-    "@cardstack/tools": "^0.1.1"
+    "@cardstack/git": "^0.1.2",
+    "@cardstack/hub": "^0.1.2",
+    "@cardstack/jsonapi": "^0.1.2",
+    "@cardstack/models": "^0.1.2",
+    "@cardstack/routing": "^0.1.2",
+    "@cardstack/tools": "^0.1.2"
   },
   "ember-addon": {
     "paths": [
