@@ -3,7 +3,7 @@
    as |rentals|}}
   <ul class="results">
     {{#each rentals as |rentalUnit|}}
-      <li>{{rental-listing rental=rentalUnit}}</li>
+      <li>{{cardstack-content content=rentalUnit format="listing"}}</li>
     {{/each}}
   </ul>
 {{/list-filter}}
