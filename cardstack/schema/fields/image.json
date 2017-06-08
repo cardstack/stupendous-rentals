@@ -1,6 +1,6 @@
 {
   "attributes": {
-    "field-type": "@cardstack/core-types::string"
+    "field-type": "image-url"
   },
   "relationships": {
     "constraints": null,
