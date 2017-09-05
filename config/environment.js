@@ -1,9 +1,10 @@
 /* eslint-env node */
+'use strict';
 
 module.exports = function(environment) {
-  var ENV = {
+  let ENV = {
     modulePrefix: 'super-rentals',
-    environment: environment,
+    environment,
     rootURL: '/',
     locationType: 'auto',
     EmberENV: {
@@ -43,11 +44,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    // use mirage in production too since the app will break
-    // if there is no API for Ember Data
-    ENV['ember-cli-mirage'] = {
-      enabled: true
-    }
+
   }
 
   return ENV;
