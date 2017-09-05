@@ -1,6 +1,8 @@
 <article class="listing">
   <a {{action 'toggleImageSize'}} class="image {{if isWide "wide"}}">
-    <img src="{{content.image}}" alt="">
+    {{#cs-field content "image" as |image|}}
+      <img src="{{image}}" alt="">
+    {{/cs-field}}
     <small>View Larger</small>
   </a>
   <h3>{{link-to content.title "rentals.show" content}}</h3>
