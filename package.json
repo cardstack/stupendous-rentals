@@ -41,15 +41,15 @@
   },
   "private": true,
   "dependencies": {
-    "@cardstack/ephemeral": "^0.2.6",
-    "@cardstack/hub": "^0.2.6",
-    "@cardstack/jsonapi": "^0.2.6",
-    "@cardstack/models": "^0.2.6",
+    "@cardstack/ephemeral": "^0.2.7",
+    "@cardstack/hub": "^0.2.7",
+    "@cardstack/jsonapi": "^0.2.7",
+    "@cardstack/models": "^0.2.7",
     "@cardstack/search": "^0.2.4",
     "@cardstack/rendering": "^0.2.5",
-    "@cardstack/routing": "^0.2.6",
-    "@cardstack/test-support": "^0.2.6",
-    "@cardstack/tools": "^0.2.6"
+    "@cardstack/routing": "^0.2.7",
+    "@cardstack/test-support": "^0.2.7",
+    "@cardstack/tools": "^0.2.7"
   },
   "ember-addon": {
     "paths": [
