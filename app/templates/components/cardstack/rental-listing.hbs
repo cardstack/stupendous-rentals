@@ -5,7 +5,7 @@
     {{/cs-field}}
     <small>View Larger</small>
   </a>
-  <h3>{{link-to content.title "rentals.show" content}}</h3>
+  <h3><a href={{cardstack-url content}} >{{content.title}}</a></h3>
   <div class="detail owner">
     <span>Owner:</span> {{content.owner}}
   </div>
@@ -22,5 +22,5 @@
     <span>Sleeps:</span> {{content.sleeps}}
   </div>
 
-  {{location-map location=content.city}}
+  {{! location-map location=content.city }}
 </article>

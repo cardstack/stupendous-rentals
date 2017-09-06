@@ -61,6 +61,27 @@ function initialModels() {
           'field-type': '@cardstack/core-types::string'
         })
     ]);
+
+  factory.addResource('content-types', 'pages')
+    .withAttributes({
+      'routing-field': 'permalink'
+    })
+    .withRelated('fields', [
+      factory.getResource('fields', 'title'),
+      factory.addResource('fields', 'body')
+        .withAttributes({
+          'field-type': '@cardstack/core-types::string'
+        }),
+      factory.addResource('fields', 'permalink')
+        .withAttributes({
+          'field-type': '@cardstack/core-types::string'
+        }),
+      factory.addResource('fields', 'main-query')
+        .withAttributes({
+          'field-type': '@cardstack/core-types::object'
+        }),
+    ]);
+
   factory.addResource('plugin-configs', 'image-url');
 
   factory.addResource('rentals').withAttributes({
@@ -92,6 +113,20 @@ function initialModels() {
     "image": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Wheeldon_Apartment_Building_-_Portland_Oregon.jpg",
     "description": "Convenience is at your doorstep with this charming downtown rental. Great restaurants and active night life are within a few feet."
   });
+
+  factory.addResource('pages').withAttributes({
+    permalink: " ",
+    title: "Welcome!",
+    mainQuery: {
+      type: 'rentals'
+    }
+  });
+
+  factory.addResource('pages').withAttributes({
+    permalink: "about",
+    title: "About"
+  });
+
 
   return factory.getModels();
 }

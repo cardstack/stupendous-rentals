@@ -45,6 +45,7 @@
     "@cardstack/hub": "^0.2.6",
     "@cardstack/jsonapi": "^0.2.6",
     "@cardstack/models": "^0.2.6",
+    "@cardstack/search": "^0.2.4",
     "@cardstack/rendering": "^0.2.5",
     "@cardstack/routing": "^0.2.6",
     "@cardstack/test-support": "^0.2.6",

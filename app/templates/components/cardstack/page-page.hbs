@@ -1,0 +1,9 @@
+<h1>{{content.title}}</h1>
+
+{{#cs-field content "mainQuery" as |query|}}
+  {{#if query}}
+    {{#cardstack-search query=query as |item|}}
+      {{cardstack-content content=item format="listing"}}
+    {{/cardstack-search}}
+  {{/if}}
+{{/cs-field}}

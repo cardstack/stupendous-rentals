@@ -1,9 +1,0 @@
-{{#list-filter
-   filter=(action 'filterByCity')
-   as |rentals|}}
-  <ul class="results">
-    {{#each rentals as |rentalUnit|}}
-      <li>{{cardstack-content content=rentalUnit format="listing"}}</li>
-    {{/each}}
-  </ul>
-{{/list-filter}}
