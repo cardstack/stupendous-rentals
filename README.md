@@ -25,7 +25,11 @@ You will need the following things properly installed on your computer.
 
 * Start the necessary server-side microservices. We want to make this automatic, but right now you need to do it yourself:
 
-* `docker run -d -p 9200:9200 cardstack/elasticsearch:dev`
+  * Elasticsearch:
+  
+      `docker run -d -p 9200:9200 cardstack/elasticsearch:dev`
+      
+    It takes a few seconds for the actual server process to be ready. You can reload http://localhost:9200 until you see JSON coming back.
 
 * `ember serve`
 
