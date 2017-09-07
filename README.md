@@ -13,7 +13,7 @@ You will need the following things properly installed on your computer.
 * [Git](https://git-scm.com/)
 * [Node.js](https://nodejs.org/) (version 7.0 or newer)
 * [Yarn](https://yarnpkg.com/)
-* [Docker](https://www.docker.com/) 
+* [Docker](https://www.docker.com/)
 
 ## Installation
 
@@ -25,8 +25,8 @@ You will need the following things properly installed on your computer.
 
 * Start the necessary server-side microservices. We want to make this automatic, but right now you need to do it yourself:
 
-    1. `docker run -d -p 9200:9200 cardstack/elasticsearch:dev`
-    
+* `docker run -d -p 9200:9200 cardstack/elasticsearch:dev`
+
 * `ember serve`
 
 * Visit your app at [http://localhost:4200](http://localhost:4200).
