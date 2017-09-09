@@ -1,25 +1,39 @@
 <div class="jumbo show-listing">
   <h2 class="title">{{cs-field content "title"}}</h2>
+  
   <div class="right detail-section">
     <div class="detail owner">
-      <strong>Owner:</strong> {{cs-field content "owner"}}
+      <strong>Owner:</strong>
+      {{cs-field content "owner"}}
     </div>
+    
     <div class="detail">
-      {{#cs-field content "propertyType" as |propertyType|}}<strong>Type:</strong> {{rental-property-type propertyType}} - {{propertyType}}{{/cs-field}}
+      <strong>Type:</strong> 
+      {{#cs-field content "propertyType" as |propertyType|}}
+        {{rental-property-type propertyType}} - {{propertyType}}
+      {{/cs-field}}
     </div>
+    
     <div class="detail">
-      <strong>Location:</strong> {{cs-field content "city"}}
+      <strong>Location:</strong>
+      {{cs-field content "city"}}
     </div>
+    
     <div class="detail">
-      <strong>Number of bedrooms:</strong> {{cs-field content "bedrooms"}}
+      <strong>Number of bedrooms:</strong>
+      {{cs-field content "bedrooms"}}
+    </div>
+    
     <div class="detail">
-      <strong>Sleeps:</strong> {{content.sleeps}}
+      <strong>Sleeps:</strong>
+      {{#cs-field-group content name="sleeps" fields="bedrooms"}}
+        {{content.sleeps}}
+      {{/cs-field-group}}
     </div>
-    </div>
+    
     <p>&nbsp;</p>
     <p class="description">{{cs-field content "description"}}</p>
   </div>
 
   {{cs-field content "image"}}
-
 </div>
