@@ -9,8 +9,9 @@
     
     <div class="detail">
       <strong>Type:</strong> 
+      {{rental-property-type content.propertyType}} -
       {{#cs-field content "propertyType" as |propertyType|}}
-        {{rental-property-type propertyType}} - {{propertyType}}
+        {{propertyType}}
       {{/cs-field}}
     </div>
     
