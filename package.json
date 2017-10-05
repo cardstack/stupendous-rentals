@@ -45,6 +45,7 @@
     "@cardstack/ephemeral": "^0.2.7",
     "@cardstack/hub": "^0.2.7",
     "@cardstack/jsonapi": "^0.2.7",
+    "@cardstack/mobiledoc": "0.2.10",
     "@cardstack/models": "^0.2.9",
     "@cardstack/rendering": "^0.2.5",
     "@cardstack/routing": "^0.2.7",
