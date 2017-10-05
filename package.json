@@ -16,6 +16,7 @@
   },
   "devDependencies": {
     "@cardstack/core-types": "^0.2.4",
+    "@cardstack/test-support": "^0.2.7",
     "broccoli-asset-rev": "^2.4.5",
     "ember-cli": "~2.15.0",
     "ember-cli-babel": "^6.3.0",
@@ -48,7 +49,6 @@
     "@cardstack/rendering": "^0.2.5",
     "@cardstack/routing": "^0.2.7",
     "@cardstack/search": "^0.2.4",
-    "@cardstack/test-support": "^0.2.7",
     "@cardstack/tools": "^0.2.9"
   },
   "ember-addon": {
