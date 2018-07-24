@@ -1,41 +1,10 @@
-/* eslint-env node */
-
 const Factory = require('@cardstack/test-support/jsonapi-factory');
-
-module.exports = [
-  {
-    type: 'plugin-configs',
-    id: '@cardstack/ephemeral'
-  },
-  {
-    type: 'data-sources',
-    id: 'default',
-    attributes: {
-      'source-type': '@cardstack/ephemeral',
-      params: {
-        initialModels: initialModels()
-      }
-    }
-  },
-  {
-    type: 'plugin-configs',
-    id: '@cardstack/hub',
-    relationships: {
-      'default-data-source': {
-        data: { type: 'data-sources', id: 'default' }
-      }
-    }
-  }
-];
 
 function asMobiledoc(message) {
   return {"version":"0.3.1","atoms":[],"cards":[],"markups":[],"sections":[[1,"p",[[0,[],0,message]]]]}
 }
 
-function initialModels() {
-
-
-  let factory = new Factory();
+let factory = new Factory();
   factory.addResource('content-types', 'rentals')
     .withRelated('fields', [
       factory.addResource('fields', 'title')
@@ -133,6 +102,15 @@ function initialModels() {
     title: "About"
   });
 
+  factory.addResource('grants').withAttributes({
+      mayReadFields: true,
+      mayWriteFields: true,
+      mayCreateResource: true,
+      mayUpdateResource: true,
+      mayReadResource:true,
+      mayDeleteResource: true,
+      mayLogin: true
+  }).withRelated('who',[{type:'groups',id:'everyone'}]);
 
-  return factory.getModels();
-}
+
+  module.exports = factory.getModels();
